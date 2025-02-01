@@ -1,0 +1,17 @@
+# server port (basic port num is 8080)
+server:
+  port: 8080
+
+# jdbc:mysql://localhost:3306/(data_base_name)?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+# database
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boardrecipedb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: boardrecipe
+    password: boardrecipe
+
+# mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # query file
+  config-location: classpath:mybatis-config.xml # setting file
